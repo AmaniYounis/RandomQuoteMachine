@@ -1,0 +1,157 @@
+$textColor:wheat;
+
+html{
+  background: url('./assets/background.jpg') no-repeat center fixed;     
+  background-size: cover;
+  position:fixed;
+  overflow: hidden;
+
+}
+  #text{
+    color:$textColor;  
+    font-family: 'Source Code Pro', monospace;
+    display: inline-block;
+    font-size:25px;
+    text-align: center;
+    width:100%;
+    margin-top:-75px;
+  
+  }
+  #tweet-quote-img{
+    position:absolute ;
+    width:40px;
+    height:40px;
+    margin-left:260px;
+    margin-top:50px;
+  border-radius: 50%;
+  }
+  
+  #quote-box{
+    position: fixed;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 65%;
+    height: 40%;
+    background-color:rgba($color: #212118, $alpha: 0.9);
+    box-sizing: border-box;
+    display: block;
+    margin-top: 200px;
+    padding:100px 100px 100px 50px;
+
+  }
+  #author{
+    float:right;
+    font-size:25px;
+    color:gray;
+  }
+  #new-quote,#tweet-quote-img{
+    display:inline-block;
+    padding:0 10px;
+    
+  }
+  #new-quote{
+  height: 40px;
+  width: max-content;  
+  //margin-right:130px;
+  position:absolute ;
+  margin-left:320px;
+  margin-top:50px;
+  font-size:20px;
+  //padding: 5px 20px;
+  border:2px solid $textColor;
+  background-color:rgba($color: #212118, $alpha: 0.9);
+  color:$textColor;
+  cursor: pointer;
+  border-radius: 25px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  }
+  #new-quote:hover {
+    background-color:seashell;
+    color:black;
+  }
+  
+
+#author{
+  float:right;
+  font-size:25px;
+  color:gray;
+}
+#new-quote,#tweet-quote-img{
+  display:inline-block;
+  padding:0 10px;
+  
+}
+
+
+@media screen and (max-device-width: 1200px) {
+  html{
+    background-size: cover;
+  }
+.grid-container{
+  display:grid;
+  grid-template-rows: auto auto;
+  
+  box-sizing: content-box;
+
+}
+#quote-box{
+  position: fixed;
+  width:80%;
+  height:90%;
+  margin:10% 10% 10% 10%;
+  justify-content: center;
+
+}
+#text{
+  grid-row:1/2;
+  position:relative;
+  margin-top:-30%;
+  margin-left:10%;
+  font-size: 5vw;
+
+}
+#author{
+  grid-row: 2/2;
+  font-size: 4vw;
+
+}
+
+.grid-item{
+  text-align: center;
+  display: table-row;
+  align-items: center;
+}
+#new-quote{
+  position: fixed;
+ bottom: 10%;
+ right: 35%;
+ margin-right: 0px;
+
+}
+
+#tweet-quote-img{
+  position: fixed;
+
+ bottom: 10%;
+left:-5%;
+margin-left:70%;
+}
+}
+@media screen and (min-device-width: 550px) and (max-device-width: 1200px )  {
+  #text{
+    margin-top:5%;
+    margin-left:10%;
+    font-size: 4vw;
+  
+  }
+  #author{
+    grid-row: 2/2;
+    font-size: 2vw;
+  
+  }
+  
+}
